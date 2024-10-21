@@ -162,6 +162,12 @@ const translation = {
         ms_2: "Send us a message",
         submit: "Submit",
         learn: "Learn more",
+        explore: "Let's Explore",
+        go: "Let's GO!",
+        detail: "All Details",
+        explore2: "Explore More",
+        social: "Social Media integration",
+
 
     },
 
@@ -197,6 +203,11 @@ const translation = {
         msg_2: "Envíanos un mensaje",
         submit: "Enviar",
         learn: "Aprender más",
+        "explore": "Vamos a Explorar",
+        "go": "¡Vamos!",
+        "detail": "Todos los Detalles",
+        "explore2": "Explora Más",
+        "social": "Integración de Redes Sociales"
 
     },
 
@@ -233,6 +244,14 @@ const translation = {
         submit: "Soumettre",
         learn: "En savoir plus",
 
+        "explore": "Explorons",
+        "go": "Allons-y !",
+        "detail": "Tous les Détails",
+        "explore2": "Explorer Plus",
+        "social": "Intégration des Réseaux Sociaux"
+
+
+
     },
     ar: {
         "header": "مغامرة",
@@ -266,6 +285,14 @@ const translation = {
         msg_2: "أرسل لنا رسالة",
         submit: "إرسال",
         learn: "تعلم المزيد",
+
+        "explore": "دعنا نستكشف",
+        "go": "لنذهب!",
+        "detail": "كل التفاصيل",
+        "explore2": "استكشف المزيد",
+        "social": "تكامل وسائل التواصل الاجتماعي"
+
+
 
 
     },
@@ -302,6 +329,14 @@ const translation = {
         submit: "Einreichen",
         learn: "Mehr erfahren",
 
+        "explore": "Lass uns erkunden",
+        "go": "Lass uns gehen!",
+        "detail": "Alle Details",
+        "explore2": "Mehr erkunden",
+        "social": "Integration von sozialen Medien"
+
+
+
 
     }
 
@@ -337,6 +372,12 @@ let foot = document.getElementById("footer")
 let msg1 = document.getElementById("msg-1")
 let msg2 = document.getElementById("contact-msg")
 let submit = document.getElementById("submit-btn")
+let learn = document.getElementById("learn-btn")
+let explore = document.getElementById("explore-btn")
+let go = document.getElementById("go-btn")
+let detail = document.getElementById("detail-btn")
+let explore2 = document.getElementById("explore2-btn")
+let social = document.getElementById("social-btn")
 languageSelector.addEventListener("change", (event) => {
     setLanguage(event.target.value)
 })
@@ -369,7 +410,14 @@ const setLanguage = (language) => {
         foot.innerHTML = translation.fr.footer;
         msg1.innerHTML = translation.fr.msg_1;
         msg2.innerHTML = translation.fr.msg_2;
-        submit.value = translation.fr.submit
+        submit.value = translation.fr.submit;
+        learn.innerText = translation.fr.learn;
+        explore.innerText = translation.fr.explore;
+        go.innerText = translation.fr.go;
+        detail.innerText = translation.fr.detail;
+        explore2.innerText = translation.fr.explore2;
+        social.innerText = translation.fr.social;
+
 
 
     }
@@ -401,7 +449,14 @@ const setLanguage = (language) => {
         foot.innerHTML = translation.en.footer;
         msg1.innerHTML = translation.en.msg_1;
         msg2.innerHTML = translation.en.msg_2;
-        submit.value = translation.en.submit
+        submit.value = translation.en.submit;
+        learn.innerText = translation.en.learn;
+        explore.innerText = translation.en.explore;
+        go.innerText = translation.en.go;
+        detail.innerText = translation.en.detail;
+        explore2.innerText = translation.en.explore2;
+        social.innerText = translation.en.social;
+
 
     }
     else if (language == "es") {
@@ -432,7 +487,14 @@ const setLanguage = (language) => {
         foot.innerHTML = translation.es.footer;
         msg1.innerHTML = translation.es.msg_1;
         msg2.innerHTML = translation.es.msg_2;
-        submit.value = translation.es.submit
+        submit.value = translation.es.submit;
+        learn.innerText = translation.es.learn;
+        explore.innerText = translation.es.explore;
+        go.innerText = translation.es.go;
+        detail.innerText = translation.es.detail;
+        explore2.innerText = translation.es.explore2;
+        social.innerText = translation.es.social;
+
 
     }
     else if (language == "ar") {
@@ -463,7 +525,14 @@ const setLanguage = (language) => {
         foot.innerHTML = translation.ar.footer;
         msg1.innerHTML = translation.ar.msg_1;
         msg2.innerHTML = translation.ar.msg_2;
-        submit.value = translation.ar.submit
+        submit.value = translation.ar.submit;
+        learn.innerText = translation.ar.learn;
+        explore.innerText = translation.ar.explore;
+        go.innerText = translation.ar.go;
+        detail.innerText = translation.ar.detail;
+        explore2.innerText = translation.ar.explore2;
+        social.innerText = translation.ar.social;
+
 
     }
     else if (language == "gm") {
@@ -494,7 +563,14 @@ const setLanguage = (language) => {
         foot.innerHTML = translation.gm.footer;
         msg1.innerHTML = translation.gm.msg_1;
         msg2.innerHTML = translation.gm.msg_2;
-        submit.value = translation.gm.submit
+        submit.value = translation.gm.submit;
+        learn.innerText = translation.gm.learn;
+        explore.innerText = translation.gm.explore;
+        go.innerText = translation.gm.go;
+        detail.innerText = translation.gm.detail;
+        explore2.innerText = translation.gm.explore2;
+        social.innerText = translation.gm.social;
+
 
     }
 }
